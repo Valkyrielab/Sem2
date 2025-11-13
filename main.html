@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home</title>
+  <link rel="stylesheet" href="Styles.css" />
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="logo" class="logo" />
+        <nav class ="main-nav">
+            <button><a href="login.html" id="nav-home">Login</a></button>
+            <button><a href="main.html" >Home</a></button>
+            <button><a href="UserManagement" id = "nav-admin" class = "role-only admin-only" >User Management</a></button>    
+            <button><a href="AdminDashboard.html" id="nav-admin" class="role-only admin-only"> Dashboard</a></button>         
+            <button><a href="Contracts.html" id="nav-user" class="role-only user-only admin-only">Contracts</a></button>
+            <button><a href="Users/ApprovalsSub.html" id="nav-user" class="role-only user-only">Approvals & Submissions</a></button>
+        </nav>
+        <div class="user-area" id="userArea">
+            <!-- will find file in Js -->
+        </div>
+    </header>
+    <main class="Center">
+        <section class="card">
+            <h2 id="greeting" > Welkome to the HOME page</h2> 
+            <div id=" adminPanel" class="panel admin-only" hidden>
+                <h3> Admin Hub</h3>
+                <button><a href="UserManagement.html"> User Management</a></button>
+                <button><a href="AdminDashboard.html"> Dashboard</a></button>
+                <botton><a href="Warning.html"> View warnings</a></button>
+                <button><a href="hearings.html"> Discipline</a></button>
+
+                <p> Here you can manage users and view administrative dashboards. </p>
+            </div>
+            <div id="userPanel" class="panel user-only" hidden>
+                <h3> User Hub</h3>
+                <button><a href="Contracts.html"> View Contracts</a></button>
+                <button><a href="Users/ApprovalsSub.html"> Approvals & Submissions</a></button>
+
+                <p> Here you can view and manage your contracts and submissions. </p>
+
+            </div>
+
+        </section>
+    </main>
+</body>
+</html>
